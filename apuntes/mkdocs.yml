@@ -1,5 +1,6 @@
 site_name: PIA - Curso de Especialización
 site_url: https://rafasalaesteve.github.io/PIA
+use_directory_urls: true
 repo_url: https://github.com/RafaSalaEsteve/PIA
 repo_name: RafaSalaEsteve/PIA
 
@@ -7,11 +8,27 @@ theme:
   name: material
   language: es
   features:
-    - navigation.instant
     - navigation.tabs
-    - toc.integrate
-    - search.suggest
-    - search.highlight
+    - navigation.top
+    - palette.toggle
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+
+    
 
 nav:
   - Inicio: index.md
@@ -35,3 +52,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/RafaSalaEsteve/PIA
+  logo: images/logo.png
+  favicon: images/favicon.ico
