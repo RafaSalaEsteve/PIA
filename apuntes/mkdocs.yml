@@ -1,5 +1,37 @@
-site_name: Programació d'Intel·ligència Artificial
-site_url: https://rafasalaesteve.github.io/PIA/
-nav:
+site_name: PIA - Curso de Especialización
+site_url: https://rafasalaesteve.github.io/PIA
+repo_url: https://github.com/RafaSalaEsteve/PIA
+repo_name: RafaSalaEsteve/PIA
+
 theme:
   name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Inicio: index.md
+  - Guía: guia.md
+  - Recursos: recursos.md
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RafaSalaEsteve/PIA
