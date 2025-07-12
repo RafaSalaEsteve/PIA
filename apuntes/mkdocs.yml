@@ -1,0 +1,5 @@
+site_name: Programació d'Intel·ligència Artificial
+site_url: https://rafasalaesteve.github.io/PIA/
+nav:
+theme:
+  name: material
