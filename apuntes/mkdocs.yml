@@ -4,6 +4,9 @@ use_directory_urls: true
 repo_url: https://github.com/RafaSalaEsteve/PIA
 repo_name: RafaSalaEsteve/PIA
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   language: es
@@ -11,6 +14,8 @@ theme:
     - navigation.tabs
     - navigation.top
     - palette.toggle
+    - content.code.copy
+    - content.code.annotate
 
   palette:
     - scheme: default
@@ -33,7 +38,10 @@ theme:
 nav:
   - Inicio: index.md
   - Guía: guia.md
-  - Recursos: recursos.md
+  - Unitat 1. Introducció a la Programació:
+      - 1. Algorismes i llenguatges: Unitat_1.Introduccio_a_la_Programacio/teoria1_algorismes_i_llenguatges.md
+      - 2. Exercici pràctic: Unitat_1.Introduccio_a_la_Programacio/exercicis.md
+
 
 markdown_extensions:
   - admonition
@@ -41,6 +49,15 @@ markdown_extensions:
   - codehilite
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets:
+      base_path: !relative  # rutas relativas al archivo Markdown actual
+
 
 plugins:
   - search
