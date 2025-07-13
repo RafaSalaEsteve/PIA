@@ -32,16 +32,22 @@ theme:
         icon: material/weather-sunny
         name: Cambiar a modo claro
 
-
-    
-
 nav:
   - Inicio: index.md
   - Guía: guia.md
   - Unitat 1. Introducció a la Programació:
       - 1. Algorismes i llenguatges: Unitat_1.Introduccio_a_la_Programacio/teoria1_algorismes_i_llenguatges.md
       - 2. Exercici pràctic: Unitat_1.Introduccio_a_la_Programacio/exercicis.md
-
+  - Unitat 2. El Llenguatje de programació Python:
+      - 1. Preparació del entorn: Unitat_2_Python/01_Preparacio_Entorn/teoria.md
+      - 2. Tipus de dades. Operadors: Unitat_2_Python/02_Tipus_Variables_Operadors/teoria.md
+      - 3. Estructures de control: Unitat_2_Python/03_Estructures_De_Control/teoria.md
+      - 4. Funcions: Unitat_2_Python/04_Funcions/teoria.md
+      - 5. Estructures de dades: Unitat_2_Python/05_Estructures_De_Dades/teoria.md
+      - 6. Programació orientada a objectes: Unitat_2_Python/06_POOteoria.md
+      - 7. Projecte: Unitat_2_Python/07_Projecteteoria.md
+      - 8. Exercici guiat - Preprojecte: Unitat_2_Python/08_Exercici_Pre_Projecte/teoria.md
+      - 9. Tractament de fitxers i directoris en Python: Unitat_2_Python/09_Tractament_De_Fitxers/teoria.md
 
 markdown_extensions:
   - admonition
@@ -49,15 +55,15 @@ markdown_extensions:
   - codehilite
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.snippets:
-      base_path: !relative  # rutas relativas al archivo Markdown actual
-
+      base_path: !relative
 
 plugins:
   - search
